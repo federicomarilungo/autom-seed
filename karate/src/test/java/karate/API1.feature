@@ -1,6 +1,7 @@
-Feature: sample
+Feature: API1
 
   Background:
+    * def host = 'https://petstore.swagger.io/'
     * def schema =
     """
    {
@@ -23,19 +24,11 @@ Feature: sample
   }
     """
 
-  Scenario: first hello world
-    Given url 'https://petstore.swagger.io/v2/pet/1'
+  Scenario: Get pet
+    Given url host +'v2/pet/1'
     When method Get
     Then status 200
     And match response == schema
     * print response
 
-  Scenario: first hello world
-    Given url "http://www.google.com"
-    When method Get
-    * print response
-    * print 'hello'
-
-  Scenario: second scenario
-    * print 'second'
 

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/autom-seed.iml" filepath="$PROJECT_DIR$/.idea/autom-seed.iml" />
+      <module fileurl="file://$PROJECT_DIR$/karate/karate-junit5.iml" filepath="$PROJECT_DIR$/karate/karate-junit5.iml" />
+    </modules>
+  </component>
+</project>

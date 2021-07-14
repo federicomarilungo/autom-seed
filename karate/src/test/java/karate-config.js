@@ -2,14 +2,17 @@ function fn(){
 
   var env = karate.env; // get java system property 'karate.env'
   karate.log('karate.env system property was:', env);
+
   if (!env) {
     env = 'test'; // a custom 'intelligent' default
   }
+
   var config = { // base config JSON
     appId: 'my.app.id',
     appSecret: 'my.secret',
     host: 'https://petstore.swagger.io/',
   };
+
   if (env == 'test') {
     // over-ride only those that need to be
     config.host = 'https://petstore.swagger.io/';
